@@ -7,9 +7,7 @@ Author: John Glatts
 
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
-{
-
+int main(int argc, char const *argv[]) {
 	int price, payment, change;	//where the user enters item price
 	double quarters, dimes, nickels, pennies; 	//going to come in handy for calculations
 	int quarters_remainder, dimes_remainder, nickels_remainder; //changed from double to int, error message using double
