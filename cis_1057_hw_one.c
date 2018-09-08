@@ -1,13 +1,12 @@
 /*
 
-CIS 1057 Assignment 1
+CIS 1057 
 Author: John Glatts
 
 */
 
-
-
 #include <stdio.h>
+
 
 int main(int argc, char const *argv[])
 {
@@ -26,8 +25,7 @@ int main(int argc, char const *argv[])
 	change = payment-price;
 	printf("\nChange Required: %d\n", change);	
 	printf("%d cents in coins can be given as:\n", change);
-
-
+	
 	// Getting somewhere, the division/remainder combo seems to WORK
 	// tweak the other calcs to get the right numbers yeeo!!! 
 	quarters = change / 25;
@@ -47,7 +45,6 @@ int main(int argc, char const *argv[])
 	//use the remainder to see how many pennies we can use
 	//no calc needed for pennies
 	printf("Pennies: %d\n", nickels_remainder);
-	
 	
 	return 0;
 }
