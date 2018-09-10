@@ -8,11 +8,12 @@ Author: John Glatts
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-	int price, payment, change;	//where the user enters item price
-	double quarters, dimes, nickels, pennies; 	//going to come in handy for calculations
+	
+	int price, payment, change;	
 	int quarters_remainder, dimes_remainder, nickels_remainder; //changed from double to int, error message using double
+	double quarters, dimes, nickels, pennies; 	//going to come in handy for calculations
 
-	//get input
+	//get input, price and payment
 	printf("\nEnter Item Price and Amount Paid\n");
 	scanf("%d%d", &price, &payment);
 	printf("\nItem Price(in cents): %d\n", price);
@@ -39,9 +40,9 @@ int main(int argc, char const *argv[]) {
 	nickels_remainder = dimes_remainder % 5;
 	printf("\tNickels: %lf\n", nickels);
 
-	//use the remainder to see how many pennies we can use
-	//no calc needed for pennies
+	//use nickels_remainder to see how many pennies we can use
 	printf("\tPennies: %d\n", nickels_remainder);
 		
 	return 0;
+	
 }
